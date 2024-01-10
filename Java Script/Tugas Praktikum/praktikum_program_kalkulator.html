@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <script>
+        function hitung(operator) {
+            var bil1 = parseFloat(document.getElementById("bil1").value);
+            var bil2 = parseFloat(document.getElementById("bil2").value);
+            var hasil = 0;
+
+            if (operator === '+') {
+                hasil = bil1 + bil2;
+            } else if (operator === '-') {
+                hasil = bil1 - bil2;
+            } else if (operator === 'x') {
+                hasil = bil1 * bil2;
+            } else if (operator === '/') {
+                hasil = bil1 / bil2;
+            }
+
+            document.getElementById("hasil").value = hasil;
+        }
+    </script>
+</head>
+<body>
+    <h1>Kalkulator Sederhana</h1>
+    <label for="bil1">Bilangan 1:</label>
+    <input type="number" id="bil1" name="bil1">
+    <br><br>
+    <label for="bil2">Bilangan 2:</label>
+    <input type="number" id="bil2" name="bil2">
+    <br><br>
+    <input type="button" value="+" onclick="hitung('+')">
+    <input type="button" value="-" onclick="hitung('-')">
+    <input type="button" value="x" onclick="hitung('x')">
+    <input type="button" value="/" onclick="hitung('/')">
+    <br><br>
+    <label for="hasil">Hasil:</label>
+    <input type="text" id="hasil" name="hasil" readonly>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Klinik Sehat</title>
+</head>
+<body>
+    <h1>Formulir Klinik Sehat</h1>
+<!----------- TAG FORM -------------->
+    <form>
+        <label for="nama">Nama:</label>
+        <!----------- TAG <INPUT> -------------->
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+        <br>
+        
+        <label for="umur">Umur:</label> <!-------------TAG LABEL----------------->
+        <input type="number" id="umur" name="umur" placeholder="Masukkan umur Anda" required>
+        <br>
+
+        <label for="alamat">Alamat:</label> <!-------------TAG LABEL----------------->
+        <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat Anda" required>
+        <!----------- TAG <INPUT> -------------->
+        <br>
+
+        <label for="keluhan">Keluhan:</label> <!-------------TAG LABEL----------------->
+        <!----------- TEXT AREA -------------->
+        <textarea id="keluhan" name="keluhan" placeholder="Tuliskan keluhan Anda" rows="4" required></textarea>
+        <!----------- TEXT AREA -------------->
+        <br>
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label> <!-------------TAG LABEL----------------->
+        <!----------- TAG SELECT -------------->
+        <select id="jenis_kelamin" name="jenis_kelamin" required>
+            <option value="" disabled selected>Pilih jenis kelamin</option>
+            <option value="laki-laki">Laki-Laki</option>
+            <option value="perempuan">Perempuan</option>
+        </select>
+        <!----------- TAG SELECT -------------->
+        <br>
+
+        <label for="gejala">Gejala yang Dirasakan:</label> <!-------------TAG LABEL----------------->
+        <input type="checkbox" id="demam" name="gejala" value="demam">
+        <label for="demam">Demam</label> <!-------------TAG LABEL----------------->
+        <input type="checkbox" id="batuk" name="gejala" value="batuk">
+        <label for="batuk">Batuk</label> <!-------------TAG LABEL----------------->
+        <input type="checkbox" id="pusing" name="gejala" value="pusing">
+        <label for="pusing">Pusing</label> <!-------------TAG LABEL----------------->
+        <br>
+        <!----------- TAG LABEL -------------->     
+             <label for="tanggal_konsultasi">Tanggal Konsultasi:</label> <!-------------TAG LABEL----------------->
+        <!----------- TAG LABEL --------------> 
+        <input type="date" id="tanggal_konsultasi" name="tanggal_konsultasi" required>
+        <br>
+        <input type="submit" value="Kirim">
+    </form>
+    <!----------- TAG FORM -------------->
+</body>
+</html>

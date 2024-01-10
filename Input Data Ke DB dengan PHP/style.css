@@ -1,0 +1,49 @@
+/* CSS untuk judul */
+.judul {
+    background-color: #008080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* CSS untuk tombol tambah data */
+.tombol {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+/* CSS untuk tabel */
+.table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* CSS untuk tautan edit dan hapus */
+.edit, .hapus {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 5px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.edit {
+    background-color: #4CAF50;
+}
+
+.hapus {
+    background-color: #f44336;
+}

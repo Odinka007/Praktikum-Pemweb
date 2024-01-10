@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Perpustakaan Kota Madiun</title>
+</head>
+<body>
+    <h1>Formulir Perpustakaan Kota Madiun</h1>
+<!----------- TAG FORM -------------->
+    <form action="proses_formulir.php" method="post">
+        <label for="nama">Nama:</label> <!-------------TAG LABEL----------------->
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required> <!----------- TAG <INPUT> -------------->
+        <br>
+        
+        <label for="alamat">Alamat:</label> <!-------------TAG LABEL----------------->
+        <!----------- TEXT AREA -------------->
+        <textarea id="alamat" name="alamat" placeholder="Masukkan alamat Anda" rows="4" required></textarea>
+        <!----------- TEXT AREA -------------->
+        <br>
+
+        <label for="email">Email:</label> <!-------------TAG LABEL----------------->
+        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required> <!----------- TAG <INPUT> -------------->
+        <br>
+
+        <label for="telepon">Telepon:</label> <!-------------TAG LABEL----------------->
+        <input type="tel" id="telepon" name="telepon" placeholder="Masukkan nomor telepon Anda" required> <!----------- TAG <INPUT> -------------->
+        <br>
+
+        <label for="buku_pinjaman">Buku yang Dipinjam:</label> <!-------------TAG LABEL----------------->
+        <input type="text" id="buku_pinjaman" name="buku_pinjaman" placeholder="Judul buku yang ingin dipinjam" required> <!----------- TAG <INPUT> -------------->
+        <br>
+
+        <label for="tanggal_pinjam">Tanggal Peminjaman:</label> <!-------------TAG LABEL----------------->
+        <input type="date" id="tanggal_pinjam" name="tanggal_pinjam" required> <!----------- TAG <INPUT> -------------->
+        <br>
+
+        <label for="kategori_buku">Kategori Buku:</label> <!-------------TAG LABEL----------------->
+        <!----------- TAG SELECT -------------->
+        <select id="kategori_buku" name="kategori_buku" required>
+            <option value="" disabled selected>Pilih kategori buku</option>
+            <option value="Fiksi">Fiksi</option>
+            <option value="Non-Fiksi">Non-Fiksi</option>
+            <option value="Referensi">Referensi</option>
+        </select>
+        <!----------- TAG SELECT -------------->
+        <br>
+
+        <input type="submit" value="Kirim"> <!----------- TAG <INPUT> -------------->
+    </form>
+    <!----------- TAG FORM -------------->
+</body>
+</html>
